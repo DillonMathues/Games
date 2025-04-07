@@ -1,0 +1,51 @@
+ship "Jelly"
+	sprite "ship/jelly"
+	thumbnail "ship/jelly"
+    "never disabled"
+	attributes
+		category "Utility"
+		"cost" 1200000
+		"required crew" 1
+		"bunks" 1
+		"hyperdrive" 1
+		"jump speed" .2
+		"fuel capacity" 100
+
+		"shields" 1000000
+		"shield generation" 100
+		"shield energy" 100
+		"hull" 12000
+		"hull repair rate" 600
+		"hull energy" 100
+
+		"automaton" 0
+		"inscrutable" 1
+		"mass" 1000
+		"drag" 25
+		"heat dissipation" .8
+		"cargo space" 1000
+
+		"thrust" 10
+		"turn" 100
+
+		"energy capacity" 20000
+		"energy generation" 1000
+	
+		"ion protection" 3
+		"ion resistance" 1
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+
+	outfits
+        Tentacle 2
+	"gun" -50 -54
+	"gun" 50 -54
+	engine 0 -40
+	leak "blood" 30 50
+	explode "blood" 45
+	"final explode" "subsidurial death"
+	description "Jelly asasdfdf"
+

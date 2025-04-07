@@ -1,0 +1,96 @@
+start "Endless Sky: Into the Badlands"
+	name "Into the Badlands"
+	description `You are the commander of the H.M.S Sabre, part of the Navy's 288th Advanced Reconnaissance & Containment Division. ARC's goal is to find and eliminate threats beyond the capablities of standard Navy forces.
+	description `WARNING: alternate starts are designed to be more challenging, but offer exclusive rewards
+	description `Difficulty:*****
+	thumbnail "scene/lobby"
+	date 16 11 3012
+	system "Kappa Centauri"
+	planet "Cornucopia"
+	conversation "into the badlands intro"
+	account
+		credits 10000
+		score 400
+		mortgage Mortgage
+			principal 0
+	set "license: Pilot's"
+
+	ship Gunboat
+		name "H.M.S Sabre"
+		sprite ship/gunboat
+		thumbnail thumbnail/gunboat
+		attributes
+			category "Light Warship"
+			cost 3200000
+			mass 150
+			bunks 12
+			"cargo space" 50
+			drag 3.1
+			"engine capacity" 90
+			"fuel capacity" 600
+			"gun ports" 2
+			"heat dissipation" 0.8
+			hull 1400
+			"outfit space" 270
+			"required crew" 7
+			shields 5800
+			"turret mounts" 1
+			"weapon capacity" 100
+		outfits
+			"A250 Atomic Thruster"
+			"A255 Atomic Steering"
+			"Anti-Missile Turret"
+			Brig
+			"Cargo Scanner"
+			"Fission Reactor"
+			"Fragmentation Grenades" 2
+			Hyperdrive
+			"Ionic Afterburner"
+			"KP-6 Photovoltaic Panel" 3
+			"LP036a Battery Pack"
+			"Large Radar Jammer"
+			"Laser Rifle" 7
+			"Outfit Scanner"
+			"Outfits Expansion" 2
+			"Particle Cannon" 2
+			"S-270 Regenerator"
+			"Security Station"
+			"Tactical Scanner"
+			"Water Coolant System"
+		crew 7
+		fuel 600
+		shields 5800
+		hull 1400
+		position 270.61132 -767.72372
+		engine -12 57.5
+			zoom 0.7
+			angle 0
+			under
+		engine 12 57.5
+			zoom 0.7
+			angle 0
+			under
+		gun -28.5 -27.5 "Particle Cannon"
+			under
+		gun 28.5 -27.5 "Particle Cannon"
+			under
+		turret 0 -1 "Anti-Missile Turret"
+			over
+		leak leak 50 50
+		leak flame 80 80
+		explode "medium explosion" 15
+		explode "small explosion" 20
+		explode "tiny explosion" 10
+		"final explode" "final explosion small" 1
+
+
+conversation "into the badlands intro"
+	scene "scene/lobby"
+	`Incoming Broadcast - Republic Navy Intellegence
+	`512 bit Encrypted
+	`Channel secure
+	`Please provide identification to recieve transmission
+	name
+	`Welcome Commander `<name>`. Coordinate metadata informs us your are near Resupply & Operations Center Kilo Bravo Mike 26.
+	`Proceed to R.O.C KBM26 For Mission Briefing
+	`R.O.C KBM26: Kappa Centauri: Cornucopia: 12.06.127 -26.29.157
